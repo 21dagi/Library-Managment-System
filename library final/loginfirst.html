@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <form action="" method="post">
+        <div class="card">
+          <h1>Log in</h1>
+          <div class="label-float">
+            <input type="text" id="user" required/>
+            <label for="user">Username</label>
+          </div>
+          <div class="label-float">
+            <input type="password" id="password" required/>
+              <label for="password">Password</label>
+              <img src="eye-regular.svg" id="passShow" alt="eyes">
+          </div>
+
+          <div class="justify">
+            <input type="submit" value="Login"/>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </main>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+    }
+    
+    body {
+      background-image: url(1.jpg);
+      background-repeat:  no-repeat;
+      background-position:center;
+      background-attachment:fixed;
+      background-size:cover;
+    }
+    
+    .container {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 100px;
+    }
+    
+    .card {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 80px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(7px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 70px;
+      width: 380px;
+      height: 350px;
+      flex: 0.5 1 100px;
+    }
+    
+    .card {
+      text-align: center;
+
+      margin-bottom: 20px;
+    }
+    
+    .card .label-float input {
+      width: 100%;
+      padding: 5px;
+      display: inline-block;
+      border: 0;
+      border-bottom: 2px solid #000;
+      background-color: transparent;
+      outline: 0;
+      transition: 0.1s linear;
+      min-width: 180px;
+      font-size: 16px;
+    }
+    
+    .label-float {
+      position: relative;
+      padding-top: 15px;
+      margin-top: 5%;
+      margin-bottom: 8%;
+      display: flex;
+      align-items: center;
+    }
+    
+    .label-float label {
+      position: absolute;
+      top: 40%;
+      font-size: 20px;
+      transition: 0.3s ease-out;
+    
+    }
+    
+    .card .label-float input:focus + label,
+    .card .label-float input:valid + label {
+      top: 0px;
+      font-size: 11pt;
+    }
+    
+    input[type="submit"] {
+      background-color: transparent;
+    
+      padding: 10px 20px;
+      outline: none;
+    
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 12pt;
+      margin-top: 60px;
+      cursor: pointer;
+      transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    input[type="submit"]:hover {
+      color: #fff;
+    }
+    
+    .justify {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .label-float img {
+      position: absolute;
+      width: 20px;
+      right: 0;
+      cursor: pointer;
+    }
+    .label-float img:hover {
+      position: absolute;
+      width: 20px;
+      right: 0;
+      cursor: pointer;
+    }
+    
+    .card h1 {
+      color: #542269;
+    }
+    .label-float label {
+      color: #000
+    }
+    .sep a {
+      color: #871a71;
+    }
+    
+    .sep {
+      border-top: 2px solid #542269;
+    }
+    
+    .card .label-float input {
+      border-bottom: 2px solid #542269;
+    }
+    
+    .card .label-float input {
+      border-bottom: 2px solid #542269;
+    }
+    
+    .card .label-float input:focus {
+      border-color: #871a71;
+    }
+    
+    input[type="submit"] {
+    
+      color: #542269;
+      font-size: 22px;
+      border: 1px solid #542269;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #542269;
+    }
+    
+    
+    .sep {
+      width: 60%;
+      margin: 10% auto;
+      padding-top: 10%;
+      text-align: center;
+    }
+    
+    
+    
+  </style>
+
+</body>
+</html>
